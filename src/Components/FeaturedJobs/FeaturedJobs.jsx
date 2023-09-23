@@ -15,9 +15,11 @@ const FeaturedJobs = () => {
            <p className='text-2xl text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p> 
           
         </div>
-        {
+      <div className='grid grid-cols-2 gap-10 mt-16'>
+      {
             jobs.map(job=><Job key={job.id} job={job}></Job>)
         }
+      </div>
         </>
     );
 };
